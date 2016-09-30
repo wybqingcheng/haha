@@ -1,0 +1,291 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+  background-color: #efefef;
+  font-family: "华文细黑";
+  color: #222222;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+//tabBar部分
+.tabBar{
+  position: fixed;
+  width: 100%;
+  height: 120/32rem;
+  bottom:0;
+  background:rgba(246,246,246,.95);
+  font-size: 0;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      font-size: 25/32rem;
+      width: 20%;
+      text-align: center;
+      div{
+        width: 100%;
+        margin-top: 15/32rem;
+        height: 50/32rem;
+        margin-bottom: 8/32rem;
+        //background-size: 45% 90%;
+        background-repeat: no-repeat;
+        background-position: center 6/32rem;
+        //box-sizing: border-box;
+      }
+      span{
+        display: inline-block;
+        width: 4rem;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #222222;
+      }
+
+      //注：当要点击换btn背景的时候直接让他的position-y加减50/32rem就好
+      //50/2也就是div的高度  要做适配必须获取其高度
+      .indexBtn{
+        background: url(images/tabBarImg1.png)no-repeat;
+        background-position: center -0/32rem;
+        background-size: 40% 200%;
+      }
+      .sendBtn{
+        background-image: url("images/tabImg6.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .reserveBtn{
+        background-image: url("images/tabBarImg4.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .shoppingCarBtn{
+        background-image: url("images/tabBarImg3.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+
+      }
+      .myBtn{
+        background-image: url("images/tabBarImg5.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+
+    }
+    .shopping_car_tabBar{
+      position: relative;
+      .shopping_alertNum{
+        color: #ffffff;
+        position: absolute;
+        top: -2/32rem;
+        right: -8/32rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #ff4400;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+//-----------------------------------我的   页面-------------------------
+.page5{
+}
+.userInfo{
+  height: 324/32rem;
+  background-color: #ffd600;
+  color: #ffffff;
+  position: relative;
+  div{
+    float: left;
+    height: 192/32rem;
+  }
+  div:first-of-type{
+    width: 30%;
+    height: 192/32rem;
+    background: url("images/page5_user1.png")no-repeat 1rem bottom;
+    background-size: 75% ;
+
+  }
+  div:nth-of-type(2){
+    width: 20%;
+
+    p{
+      text-align: justify;
+      margin-top: 65/32rem;
+      margin-bottom: 20/32rem;
+    }
+    span:first-of-type{
+      display: inline-block;
+      color: #e64f1a;
+      background: url("images/page5_user2.png")no-repeat;
+      height: 76/32rem;
+      background-size: 100%;
+      width: 177/32rem;
+      font-size: 20/32rem;
+      text-indent: 70/32rem;
+      line-height: 60/32rem;
+    }
+  }
+  div:nth-of-type(3){
+    width: 30rem/32rem;
+    background-color: red;
+    float: right;
+    background: url("images/page5_user3.png")no-repeat center 70%;
+    background-size: 90%;
+    margin-right: 1rem;
+  }
+  div:nth-of-type(4){
+    display: flex;
+    position: absolute;
+    height: 80/32rem;
+    bottom: 0;
+    background-color: #f3c800;
+    line-height: 80/32rem;
+    p{
+      width: 9.925rem;
+      border-right: 0.15rem solid #ffffff;
+      height: 50/32rem;
+      margin-top: 15/32rem;
+      line-height: 50/32rem;
+      font-size: 22/32rem;
+      text-indent: 4.8rem;
+    }
+    p:nth-of-type(1){
+      background:url("images/page5110.png")no-repeat 2.8rem 0;
+      background-size: 15% 100%;
+    }
+    p:nth-of-type(2){
+      background:url("images/page5111.png")no-repeat 2.8rem 0;
+      background-size: 15% 100%;
+      border-right: none;
+    }
+  }
+}
+
+.userHandle{
+  height: 265/32rem;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 20/32rem;
+  overflow: hidden;
+  div:first-of-type{
+    width: 100%;
+    height: 111/32rem;
+    border-bottom: 0.1rem solid #efefef;
+    overflow: hidden;
+    p{
+      float: left;
+      height: 111/32rem;
+      line-height: 111/32rem;
+      text-indent: 1rem;
+    }
+    span{
+      float: right;
+      height: 111/32rem;
+      text-align: center;
+      line-height: 111/32rem;
+      width: 10rem;
+      background: url("images/moreBg.png") no-repeat 8.5rem center;
+      color: #999999;
+      background-size: 25% 25%;
+    }
+  }
+
+  div:nth-of-type(2){
+    span{
+      background: url("images/page5_user4.png")no-repeat;
+
+    }
+  }
+  div:nth-of-type(3){
+    span{
+      background: url("images/page5_user5.png")no-repeat;
+
+    }
+  }
+  div:nth-of-type(4){
+    span{
+      background: url("images/page5_user6.png")no-repeat;
+
+    }
+  }
+  div:nth-of-type(5){
+    span{
+      background: url("images/page5_user7.png")no-repeat;
+
+    }
+  }
+  div:not(.userHandle_one){
+    float: left;
+    width: 5rem;
+    height:152/32rem;
+    font-size: 23/32rem;
+    span{
+      display: inline-block;
+      width: 5rem;
+      height: 82/32rem;
+      background-position: center bottom;
+      background-size: 28% 60%;
+    }
+    p{
+      height: 70/32rem;
+      line-height: 70/32rem;
+      text-align: center;
+    }
+  }
+}
+
+.userActivity{
+  margin-top: 20/32rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  div:nth-of-type(1){
+    background: url("images/page5_user8.png")no-repeat center;
+    background-size: 3rem;
+  }
+  div:nth-of-type(2){
+    background: url("images/page5_user9.png")no-repeat center;
+    background-size: 3rem;
+  }
+  div:nth-of-type(3){
+    background: url("images/page5_user9.png")no-repeat center;
+    background-size: 3rem;
+  }
+  div:nth-of-type(4){
+    background: url("images/page5_user10.png")no-repeat center;
+    background-size: 3rem;
+  }
+  div:nth-of-type(5){
+    background: url("images/page5_user11.png")no-repeat center;
+    background-size: 3rem;
+  }
+  div:nth-of-type(6){
+    background: url("images/page5_user12.png")no-repeat center;
+    background-size: 3rem;
+  }
+  div{
+    width: 5rem;
+    height: 240/32rem;
+    float: left;
+    text-align: center;
+    line-height: 370/32rem;
+    p{
+      font-size: 23/32rem;
+    }
+  }
+}
+
+.userLogout{
+  height: 108/32rem;
+  background-color: #ffffff;
+  margin-top: 65/32rem;
+  line-height: 108/32rem;
+  text-align: center;
+  font-size: 23/32rem;
+}

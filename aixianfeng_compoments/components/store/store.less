@@ -1,0 +1,363 @@
+/**
+ * Created by My on 2016/9/29.
+ */
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+  background-color: #efefef;
+  font-family: "华文细黑";
+  color: #222222;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+//topBar部分
+.topBar{
+  height: 95/32rem;
+  background-color: #ffd600;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  div{
+    margin-top: 12/32rem;
+    p{
+      margin-top: 45 / 32rem;
+      font-size: 16 / 32rem;
+      color: #222;
+      width: 100%;
+    }
+  }
+  .search{
+    width: 70/32rem ;
+    background:url("images/index_search_03.png")no-repeat 5px 0;
+    background-size: 39/32rem 38/32rem;
+    p{
+      letter-spacing: 5px;
+    }
+  }
+  .scan{
+    width: 90/32rem;
+    margin-left: 18/32rem ;
+    background:url("images/scan_06.png")no-repeat 8px 0 ;
+    background-size: 37/32rem 37/32rem;
+  }
+  .positionShow{
+    line-height: 63/32rem;
+    height: 63/32rem;
+    text-align: center;
+    font-size: 27/32rem;
+    color: #222222;
+  }
+  .positionShow:after{
+    content: " ▼";
+  }
+}
+//顶部Bar位置显示后面的三角
+.changeTriangle:after {
+  content: " ▲" !important;
+}
+//闪购页面样式
+.page2{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  .scan{
+    background-image: none !important;
+  }
+  .con_left{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    ul{
+      width: 152/32rem;
+      background-color: #f8f8f8;
+      li:nth-of-type(3){
+        background: url("images/send_hot.jpg") no-repeat top right;
+        background-size: auto 70%;
+      }
+      li{
+        position: relative;
+        line-height: 2.95rem;
+        text-align: center;
+        border-bottom: 2px solid #e0e0e0;
+        color: #6d6d6d;
+        font-size: 25/32rem;
+        box-sizing: border-box;
+      }
+      .empty_li_left1{
+        width: 100%;
+        height: 95/32rem;
+      }
+      .empty_li_left2{
+        width: 100%;
+        height: 120/32rem;
+      }
+    }
+  }
+  .con_right{
+    overflow: scroll;
+    height: 100%;
+    position: absolute;
+    left: 24%;
+    right: 0;
+    top:0;
+    .con_right_top{
+      width: 100%;
+      height: 95/32rem;
+      position: fixed;
+      top: 95/32rem;
+      z-index: 10;
+      background-color: rgba(255,255,255,0.95rem);
+      p{
+        width: 239/32rem;
+        height: 48/32rem;
+        line-height: 48/32rem;
+        margin-top: 24/32rem;
+        text-align: center;
+        float: left;
+        font-size: 25/32rem;
+        background: url("images/send_down.png") no-repeat 165/32rem center;
+        background-size: 30/32rem 17/32rem;
+        border-right: 1px solid #ddd;
+      }
+      p:last-of-type{
+        border-right: none;
+      }
+    }
+    li{
+      width: 480/32rem;
+      height: 218/32rem;
+      border-bottom: 1px solid #e0e0e0;
+      position: relative;
+      .product_img{
+        width: 192/32rem;
+        height: 192/32rem;
+        position: absolute;
+        top:13/32rem;
+        left: 13/32rem;
+      }
+      .product_img img{
+        width: 100%;
+        height: 100%;
+      }
+      .product_detail{
+        width: 264/32rem;
+        height: 192/32rem;
+        position: absolute;
+        right: 0;
+        top:13/32rem;
+        .product_name{
+          height: 48/32rem;
+          width: 264/32rem;
+          line-height: 48/32rem;
+          color: #232b33;
+          font-size: 25/32rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .product_promotion{
+          height: 48/32rem;
+          width: 264/32rem;
+          line-height: 48/32rem;
+          span:nth-of-type(1){
+            display: inline-block;
+            color: red;
+            width: 67/32rem;
+            height: 1rem;
+            text-align: center;
+            line-height: 1rem;
+            font-size: 25/32rem;
+            border: 1px solid red;
+            border-radius: 0.4rem;
+            vertical-align: 0.1rem;
+          }
+          span:nth-of-type(2){
+            display: inline-block;
+            color: #fff;
+            background-color: red;
+            width: 114/32rem;
+            height: 1rem;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 1rem;
+            font-size: 25/32rem;
+            margin-left: 0.3rem;
+            border-radius: 0.4rem;
+            vertical-align: 0.1rem;
+          }
+        }
+        .product_weight{
+          height: 48/32rem;
+          line-height: 48/32rem;
+          font-size: 12/32rem;
+          color: #999;
+        }
+        .product_price{
+          height: 48/32rem;
+          line-height: 48/32rem;
+          span:first-of-type{
+            color: #ff3800;
+            display: inline-block;
+            font-size: 25/32rem;
+          }
+          span:last-of-type{
+            color: #999;
+            display: inline-block;
+            font-size: 25/32rem;
+            text-decoration: line-through;
+          }
+        }
+        .product_add_num{
+          position: absolute;
+          width: 240/32rem;
+          height: 120/32rem;
+          line-height: 120/32rem;
+          text-align: center;
+          right: 0;
+          bottom: -13/32rem;
+          .minus2{
+            width: 80/32rem;
+            height: 120/32rem;
+            position: absolute;
+            right: 146/32rem;
+            display: none;
+            span{
+              display: inline-block;
+              width: 56/32rem;
+              height: 56/32rem;
+              border: 1px solid #e0e0e0;
+              line-height: 56/32rem;
+              font-weight: bold;
+              border-radius: 50%;
+              color: #ff4300;
+            }
+          }
+          .num2{
+            width: 50/32rem;
+            height: 120/32rem;
+            position: absolute;
+            right: 96/32rem;
+            display: none;
+          }
+          .add2{
+            width: 80/32rem;
+            height: 120/32rem;
+            position: absolute;
+            right: 20/32rem;
+            span{
+              display: inline-block;
+              width: 56/32rem;
+              height: 56/32rem;
+              border: 1px solid #e0e0e0;
+              line-height: 56/32rem;
+              font-weight: bold;
+              border-radius: 50%;
+              color: #ff4300;
+            }
+          }
+        }
+      }
+    }
+    .empty_li1{
+      width: 100%;
+      height: 190/32rem;
+    }
+    .empty_li2{
+      width: 100%;
+      height: 120/32rem;
+    }
+  }
+}
+//tabBar部分
+.tabBar{
+  position: fixed;
+  width: 100%;
+  height: 120/32rem;
+  bottom:0;
+  background:rgba(246,246,246,.95);
+  font-size: 0;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      font-size: 25/32rem;
+      width: 20%;
+      text-align: center;
+      div{
+        width: 100%;
+        margin-top: 15/32rem;
+        height: 50/32rem;
+        margin-bottom: 8/32rem;
+        //background-size: 45% 90%;
+        background-repeat: no-repeat;
+        background-position: center 6/32rem;
+        //box-sizing: border-box;
+      }
+      span{
+        display: inline-block;
+        width: 4rem;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #222222;
+      }
+
+      //注：当要点击换btn背景的时候直接让他的position-y加减50/32rem就好
+      //50/2也就是div的高度  要做适配必须获取其高度
+      .indexBtn{
+        background: url(images/tabBarImg1.png)no-repeat;
+        background-position: center -0/32rem;
+        background-size: 40% 200%;
+      }
+      .sendBtn{
+        background-image: url("images/tabImg6.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .reserveBtn{
+        background-image: url("images/tabBarImg4.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .shoppingCarBtn{
+        background-image: url("images/tabBarImg3.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+
+      }
+      .myBtn{
+        background-image: url("images/tabBarImg5.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+
+    }
+    .shopping_car_tabBar{
+      position: relative;
+      .shopping_alertNum{
+        color: #ffffff;
+        position: absolute;
+        top: -2/32rem;
+        right: -8/32rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #ff4400;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+html,
+body,
+div,
+p,
+span,
+a,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+input,
+ul,
+li,
+table,
+tbody,
+th,
+td,
+tr {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+body {
+  background-color: #efefef;
+}
+.myIndent .indent_header {
+  height: 3.375rem;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  line-height: 3.375rem;
+  background-color: #f9fafd;
+  font-size: 0.875rem;
+}
+.myIndent .indent_header .indent_back {
+  width: 20%;
+  background: url("images/back.png") no-repeat 20% 50%;
+  background-size: 40%;
+}
+.myIndent .indent_header div:nth-of-type(3) {
+  width: 20%;
+  background: url("images/shuaxin.png") no-repeat 80% 50%;
+  background-size: 40%;
+}
+.myIndent .indent_header div:nth-of-type(2) {
+  width: 60%;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.myIndent .indent_menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 3.125rem;
+  background-color: #ffffff;
+  font-size: 0.8125rem;
+  color: #333333;
+  border-bottom: 0.125rem solid #e0e0e0;
+}
+.myIndent .indent_menu p {
+  height: 3.09375rem;
+  line-height: 3.09375rem;
+  margin: 0 2%;
+}
+.indent_menu_choose {
+  border-bottom: 0.03125rem solid #ff0000 !important;
+  color: red!important;
+}
+.no_indent {
+  height: 9rem;
+  width: 100%;
+  background-color: red;
+  padding-top: 4rem;
+  background: url("images/noIndent.png") no-repeat center 4rem;
+  background-size: 30%;
+}
+.no_indent span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 6.25rem;
+  color: #999999;
+  font-size: 0.875rem;
+}
+.indent_list {
+  display: none;
+  margin-top: 0.6875rem;
+  background-color: #ffffff;
+  padding: 0 4%;
+  font-size: 0.78125rem;
+}
+.indent_list .indent_date {
+  height: 2.75rem;
+  border-bottom: 0.12rem solid #dddddd;
+}
+.indent_list .indent_date p {
+  float: left;
+  line-height: 2.75rem;
+}
+.indent_list .indent_date p:last-of-type {
+  float: right;
+  color: #ff8800;
+  font-size: 0.84375rem;
+}
+.indent_list .indent_img {
+  background: url("images/moreBg.png") no-repeat right 50%;
+  padding: 0.625rem 0;
+  background-size: 9%;
+  border-bottom: 0.12rem solid #dddddd;
+}
+.indent_list .indent_img img {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+}
+.indent_list .indent_total_price {
+  height: 2.6875rem;
+  border-bottom: 0.12rem solid #dddddd;
+  line-height: 2.6875rem;
+  letter-spacing: 1px;
+}
+.indent_list .indent_repeat {
+  height: 2.6875rem;
+  line-height: 2.6875rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.indent_list .indent_repeat span {
+  padding: 0.3125rem 0.4375rem;
+  background-color: #ffd600;
+  line-height: 0.8125rem;
+  border-radius: 0.3125rem;
+}
+.indent_list_bottom {
+  width: 100%;
+  height: 3.75rem;
+  padding-top: 0.625rem;
+  background: url("images/listBg.png") no-repeat center 0.625rem;
+  background-size: 40%;
+}

@@ -1,0 +1,172 @@
+html,
+body,
+div,
+p,
+span,
+a,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+input,
+ul,
+li,
+table,
+tbody,
+th,
+td,
+tr {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+body {
+  background-color: #efefef;
+}
+/*******************积分商城部分********************/
+.points_mall {
+  width: 100%;
+}
+.points_mall .points_top {
+  background-color: #fff;
+}
+.points_mall .points_top .points_top_header {
+  height: 3.4375rem;
+  background-color: #f9fafd;
+  display: flex;
+  position: relative;
+}
+.points_mall .points_top .points_top_header span {
+  width: 20%;
+  height: 3.4375rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: url("images/back.png") no-repeat 0.15625rem center;
+  background-size: 45%;
+}
+.points_mall .points_top .points_top_header p {
+  font-size: 0.90625rem;
+  width: 100%;
+  text-align: center;
+  height: 3.4375rem;
+  line-height: 3.4375rem;
+  font-weight: 700;
+}
+.points_mall .points_top .points_top_middle {
+  color: #999;
+  height: 8.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 0.12rem solid #e0e0e0;
+  border-bottom: 0.12rem solid #e0e0e0;
+  padding: 0.9375rem 0;
+}
+.points_mall .points_top .points_top_middle div {
+  background-color: #ef592a;
+  height: 8.5rem;
+  width: 8.5rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.points_mall .points_top .points_top_middle div div {
+  background-color: #ffffff;
+  height: 6.25rem;
+  width: 6.25rem;
+  border: 0.4375rem solid #e13600;
+  box-sizing: border-box;
+  display: inline;
+}
+.points_mall .points_top .points_top_middle div div p {
+  height: 3.125rem;
+  line-height: 4.53125rem;
+  text-align: center;
+}
+.points_mall .points_top .points_top_middle div div span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+.points_mall .points_top .points_top_bottom {
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  height: 4.75rem;
+}
+.points_mall .points_top .points_top_bottom a:first-of-type span {
+  background: url("images/point_1_1.png") no-repeat center bottom;
+  background-size: 33%;
+}
+.points_mall .points_top .points_top_bottom a:nth-of-type(2) span {
+  background: url("images/point_1_2.png") no-repeat center bottom;
+  background-size: 33%;
+}
+.points_mall .points_top .points_top_bottom a:nth-of-type(3) span {
+  background: url("images/point_1_3.png") no-repeat center bottom;
+  background-size: 33%;
+}
+.points_mall .points_top .points_top_bottom a {
+  width: 33.33333%;
+  border-right: 0.0625rem solid #e0e0e0;
+}
+.points_mall .points_top .points_top_bottom a span {
+  display: inline-block;
+  width: 100%;
+  height: 60%;
+}
+.points_mall .points_top .points_top_bottom a p {
+  margin-top: 0.15625rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.78125rem;
+}
+.points_mall .points_top .points_top_bottom a:last-of-type {
+  border: none;
+}
+.points_mall .point_bottom {
+  width: 100%;
+  margin-top: 0.9375rem;
+  padding-top: 2%;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.points_mall .point_bottom section {
+  float: left;
+  width: 10rem;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e0e0e0;
+}
+.points_mall .point_bottom section img {
+  width: 100%;
+}
+.points_mall .point_bottom section p {
+  font-size: 0.84375rem;
+  line-height: 1.5625rem;
+  text-indent: 0.625rem;
+}
+.points_mall .point_bottom section p:last-of-type {
+  color: red;
+}
+.points_mall .point_bottom section:nth-of-type(2),
+.points_mall .point_bottom section:nth-of-type(4) {
+  border-right: none;
+}
+.points_mall .point_bottom section:nth-of-type(3),
+.points_mall .point_bottom section:nth-of-type(4) {
+  border-bottom: none;
+}

@@ -1,0 +1,138 @@
+html,body,div,p,span,a,header,footer,h1,h2,h3,h4,h5,h6,img,input,ul,li,table,tbody,th,td,tr{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style: none;
+}
+body{
+  background-color: #efefef;
+}
+//----------------------------我的订单页面-----------------------------------
+.myIndent{
+  //display: none;
+  .indent_header{
+    height:108/32rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    line-height: 108/32rem;
+    background-color: #f9fafd;
+    font-size: 28/32rem;
+    .indent_back{
+      width: 20%;
+      background: url("images/back.png")no-repeat 20% 50%;
+      background-size: 40%;
+    }
+    div:nth-of-type(3){
+      width: 20%;
+      background: url("images/shuaxin.png")no-repeat 80% 50%;
+      background-size: 40%;
+    }
+    div:nth-of-type(2){
+      width: 60%;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+  .indent_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 100/32rem;
+    background-color: #ffffff;
+    font-size: 26/32rem;
+    color: #333333;
+    border-bottom: 4/32rem solid #e0e0e0;
+    p{
+      height: 99/32rem;
+      line-height: 99/32rem;
+      margin: 0 2%;
+    }
+
+  }
+}
+//---------------选中时候的样式-------------------
+.indent_menu_choose{
+  border-bottom: 1/32rem solid red!important;
+  color: red!important;
+}
+
+//没有订单模块
+.no_indent{
+  //display: none;
+  height: 288/32rem;
+  width: 100%;
+  background-color: red;
+  padding-top: 128/32rem;
+  background: url("images/noIndent.png")no-repeat center 128/32rem;
+  background-size: 30%;
+  span{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 200/32rem;
+    color: #999999;
+    font-size: 28/32rem;
+  }
+}
+
+//有订单模块
+.indent_list{
+  display: none;
+  margin-top: 22/32rem;
+  background-color: #ffffff;
+  padding: 0 4%;
+  font-size: 25/32rem;
+  .indent_date{
+    height: 88/32rem;
+    border-bottom: 0.12rem solid #dddddd;
+    p{
+      float: left;
+      line-height: 88/32rem;
+    }
+    p:last-of-type{
+      float: right;
+      color: #ff8800;
+      font-size: 27/32rem;
+    }
+  }
+  .indent_img{
+    background: url("images/moreBg.png")no-repeat right 50%;
+    padding:20/32rem 0;
+    background-size: 9%;
+    border-bottom: 0.12rem solid #dddddd;
+    img{
+      display: inline-block;
+      width: 20%;
+      height: 20%;
+    }
+  }
+  .indent_total_price{
+    height: 86/32rem;
+    border-bottom: 0.12rem solid #dddddd;
+    line-height: 86/32rem;
+    letter-spacing: 1px;
+  }
+  .indent_repeat{
+    height: 86/32rem;
+    line-height: 86/32rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    span{
+      padding: 10/32rem 14/32rem;
+      background-color: #ffd600;
+      line-height: 26/32rem;
+      border-radius: 10/32rem;
+    }
+  }
+
+}
+.indent_list_bottom{
+  width: 100%;
+  height: 120/32rem;
+  padding-top: 20/32rem;
+  background: url("images/listBg.png")no-repeat center 20/32rem;
+  background-size: 40%;
+}

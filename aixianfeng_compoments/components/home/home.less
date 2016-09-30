@@ -1,0 +1,525 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+  background-color: #efefef;
+  font-family: "华文细黑";
+  color: #222222;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+//loading部分
+.enter{
+  display: none;
+  width: 20rem;
+  height: 99.99999999%;
+  background-color: #ffd82b;
+  background-image: url("images/enterBg.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center 30%;
+  border-top:1/32rem solid #ffd82b;
+  position: relative;
+
+  .enter_position{
+    width: 75/32rem;
+    height: 75/32rem;
+    background-image: url("images/enter_position.png");
+    background-size: 75/32rem 75/32rem;
+    margin: 570/32rem auto 5/32rem auto;
+    -webkit-animation:opacityChange 2s linear infinite;
+    -o-animation:opacityChange 2s linear infinite;
+    animation:opacityChange 2s linear infinite;
+  }
+  p{
+    font-size: 26 / 32rem;
+    width: 100%;
+    text-align: center;
+    color: #333;
+  }
+  .alert_window{
+    margin: -340/32rem auto;
+    height: 300/32rem;
+    width: 80%;
+    border-radius: 20/32rem;
+    font-weight: 700;
+    font-family: "微软雅黑";
+    position: relative;
+    z-index: 10;
+    .alert_ask{
+      height: 210/32rem;
+      background-color: #fafac6;
+      border-radius: 20/32rem 20/32rem 0 0;
+      padding: 35/32rem 0;
+      box-sizing: border-box;
+
+      p{
+        height: 33.333%;
+        font-size: 1rem;
+        color: #000000;
+      }
+    }
+    .alert_btm{
+      margin-top: 0.05rem;
+      height: 90/32rem;
+      display: flex;
+      justify-content: space-between;
+      div{
+        background-color: #fafac6;
+        width: 49.81%;
+        line-height: 90/32rem;
+        height: 90/32rem;
+        text-align: center;
+      }
+      div:first-of-type{
+        border-radius: 0 0 0 20/32rem;
+      }
+      div:last-of-type{
+        border-radius: 0 0  20/32rem 0;
+      }
+    }
+  }
+}
+//loading部分定位动画函数
+@keyframes opacityChange {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacityChange {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+//topBar部分
+.topBar{
+  height: 95/32rem;
+  background-color: #ffd600;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  div{
+    margin-top: 12/32rem;
+    p{
+      margin-top: 45 / 32rem;
+      font-size: 16 / 32rem;
+      color: #222;
+      width: 100%;
+    }
+  }
+  .search{
+    width: 70/32rem ;
+    background:url("images/index_search_03.png")no-repeat 5px 0;
+    background-size: 39/32rem 38/32rem;
+    p{
+      letter-spacing: 5px;
+    }
+  }
+  .scan{
+    width: 90/32rem;
+    margin-left: 18/32rem ;
+    background:url("images/scan_06.png")no-repeat 8px 0 ;
+    background-size: 37/32rem 37/32rem;
+  }
+  .positionShow{
+    line-height: 63/32rem;
+    height: 63/32rem;
+    text-align: center;
+    font-size: 27/32rem;
+    color: #222222;
+  }
+  .positionShow:after{
+    content: " ▼";
+  }
+}
+//顶部Bar位置显示后面的三角
+.changeTriangle:after {
+  content: " ▲" !important;
+}
+
+//tabBar部分
+.tabBar{
+  position: fixed;
+  width: 100%;
+  height: 120/32rem;
+  bottom:0;
+  background:rgba(246,246,246,.95);
+  font-size: 0;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      font-size: 25/32rem;
+      width: 20%;
+      text-align: center;
+      div{
+        width: 100%;
+        margin-top: 15/32rem;
+        height: 50/32rem;
+        margin-bottom: 8/32rem;
+        //background-size: 45% 90%;
+        background-repeat: no-repeat;
+        background-position: center 6/32rem;
+        //box-sizing: border-box;
+      }
+      span{
+        display: inline-block;
+        width: 4rem;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #222222;
+      }
+
+      //注：当要点击换btn背景的时候直接让他的position-y加减50/32rem就好
+      //50/2也就是div的高度  要做适配必须获取其高度
+      .indexBtn{
+        background: url(images/tabBarImg1.png)no-repeat;
+        background-position: center -0/32rem;
+        background-size: 40% 200%;
+      }
+      .sendBtn{
+        background-image: url("images/tabImg6.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .reserveBtn{
+        background-image: url("images/tabBarImg4.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .shoppingCarBtn{
+        background-image: url("images/tabBarImg3.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+
+      }
+      .myBtn{
+        background-image: url("images/tabBarImg5.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+
+    }
+    .shopping_car_tabBar{
+      position: relative;
+      .shopping_alertNum{
+        color: #ffffff;
+        position: absolute;
+        top: -2/32rem;
+        right: -8/32rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #ff4400;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+//清除tabBar占位
+.clear{
+  width: 100%;
+  height: 110/32rem;
+}
+
+
+/**************主页部分***************/
+.page1{
+  //display: none;
+}
+
+//主页banner部分
+.index_banner{
+  width: 100%;
+  height: 238/32rem;
+  //让topBar站的位置流出来
+  padding-top: 95/32rem;
+  img{
+    width: 20rem;
+    height: 238/32rem;
+  }
+}
+
+//主页menu部分
+.index_menu{
+  height: 316/32rem;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 20/32rem;
+  font-size: 0;
+  padding: 5/32rem 0;
+  overflow: hidden;
+  div{
+    float: left;
+    width: 25%;
+    margin-top: 13/32rem;
+    span{
+      display: inline-block;
+      width: 5rem;
+      height: 100/32rem;
+      background-repeat: no-repeat;
+      background-size: 145/32rem 100/32rem;
+      background-position: 7/32rem 0;
+      margin-bottom: 3/32rem;
+    }
+    p{
+      font-size: 22/32rem;
+      height: 33/32rem;
+      width: 5rem;
+      text-align: center;
+    }
+  }
+  a:nth-of-type(1) span{
+    background-image: url("images/index_menu1.png");
+  }
+  a:nth-of-type(2) span{
+    background-image: url("images/indexn_menu2.jpg");
+  }
+  a:nth-of-type(3) span{
+    background-image: url("images/indexn_menu3.png");
+  }
+  a:nth-of-type(4) span{
+    background-image: url("images/indexn_menu4.png");
+  }
+  a:nth-of-type(5) span{
+    background-image: url("images/indexn_menu5.png");
+  }
+  a:nth-of-type(6) span{
+    background-image: url("images/indexn_menu6.jpg");
+  }
+  a:nth-of-type(7) span{
+    background-image: url("images/indexn_menu7.jpg");
+  }
+  a:nth-of-type(8) span{
+    background-image: url("images/indexn_menu8.jpg");
+  }
+}
+
+.index_headline{
+  width: 100%;
+  height: 64/32rem;
+  margin-top: 20/32rem;
+  background-color: #ffffff;
+  span{
+    float: left;
+    height: 44/32rem;
+    width: 122/32rem;
+    padding-right: 15/32rem;
+    margin: 10/32rem 0 0 15/32rem;
+    border-right: 1px solid #e0e0e0;
+    img{
+      height: 44/32rem;
+      width: 122/32rem;
+    }
+  }
+  div{
+    display: inline-block;
+    height: 64/32rem;
+    font-size: 24/32rem;
+    span:last-of-type{
+      font-size: 24/32rem;
+      line-height: 64/32rem;
+      font-family: "微软雅黑";
+      height: 24/32rem;
+      width: 390/32rem;
+      margin: 0;
+    }
+    span:nth-of-type(1){
+      float: left;
+      color: red;
+      border: 1px solid red;
+      border-radius: 5px;
+      height: 24/32rem;
+      line-height: 24/32rem;
+      margin-top:18/32rem;
+      margin-right: 5/32rem;
+      padding: 1px;
+      text-align: center;
+      width: 48/32rem;
+    }
+  }
+}
+
+//主页picAd部分
+.index_picAd{
+  height: 280/32rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20/32rem;
+  img{
+    width: 211/32rem;
+  }
+}
+
+//主页card部分
+.index_card{
+  width: 100%;
+  height: 258/32rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20/32rem;
+  align-items: flex-end;
+  img{
+    width: 318/32rem;
+    height: 126/32rem;
+  }
+}
+
+//主页商品列表
+.index_list{
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 20/32rem;
+  padding-bottom: 15/32rem;
+  .list_topBar{
+    height: 96/32rem;
+    line-height: 96/32rem;
+    display: flex;
+    justify-content: space-between;
+    p{
+      color: #f38631;
+      font-size: 32/32rem;
+      margin-left: 19/32rem;
+    }
+    p:before{
+      display: inline-block;
+      content: "";
+      width: 16/32rem;
+      height: 32/32rem;
+      background-color: #f38631;
+      margin-right: 12/32rem;
+    }
+    span{
+      margin-right: 5/32rem;
+      color: #9f9f9f;
+      font-size: 0.9rem;
+    }
+    span:after{
+      content: "";
+      display: inline-block;
+      width: 0.9rem;
+      height: 0.9rem;
+      background: url("images/moreBg.png") no-repeat 0 8/32rem;
+      background-size: 50/32rem 20/32rem;
+      margin-left: 10/32rem;
+    }
+  }
+  .list_banner{
+    height: 152/32rem;
+    margin-left: 0.59375rem;
+    img{
+      height: 152/32rem;
+      width: 602/32rem;
+    }
+  }
+  .index_goods_list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.49375rem;
+    padding-right: 0.49375rem;
+    margin-top: 15/32rem;
+    div{
+      width: 200/32rem;
+      position: relative;
+      border-right: 1px solid #e1e1e1;
+      img{
+        width: 187/32rem;
+        height: 187/32rem;
+      }
+      p{
+        height: 1.5rem;
+        line-height: 1.5rem;
+        font-size: 24/32rem;
+        text-indent: 10/32rem;
+      }
+      p:nth-of-type(3){
+        color: #bbbbbb;
+      }
+      p:nth-of-type(4){
+        color: red;
+      }
+      p:nth-of-type(4) span{
+        text-decoration: line-through;
+        color: #bbbbbb;
+      }
+    }
+    div:last-of-type{
+      border-right: none;
+    }
+  }
+
+}
+
+//相同小部件
+//精选
+.sift,.toofer{
+  height: 24/32rem;
+  padding: 1px 2px;
+  display: inline-block;
+  border: 1px solid red;
+  color: red;
+  font-size: 20/32rem;
+  border-radius: 5px;
+  font-family: "微软雅黑";
+  line-height: 24/32rem;
+  text-align: center;
+  margin-right: 7/32rem;
+  text-indent: 0;
+}
+//满减
+.fullReduction{
+  height: 24/32rem;
+  padding: 1px 3px;
+  display: inline-block;
+  border: 1px solid red;
+  color: #ffffff;
+  font-size: 20/32rem;
+  border-radius: 5px;
+  font-family: "微软雅黑";
+  line-height: 24/32rem;
+  text-align: center;
+  margin-right: 8/32rem;
+  background-color: red;
+}
+//加号
+.add,.minus{
+  display: inline-block;
+  height: 51/32rem;
+  width: 51/32rem;
+  color: red;
+  border: 1px solid #e1e1e1;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 51/32rem;
+  font-weight: 900;
+  font-size: 50/32rem;
+  position: absolute;
+  right: 10/32rem;
+  bottom: 0;
+}

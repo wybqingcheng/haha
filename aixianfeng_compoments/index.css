@@ -1,0 +1,89 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+    background-color: #efefef;
+    font-family: "华文细黑";
+    color: #222222;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.tabBar {
+    position: fixed;
+    width: 100%;
+    height: 3.75rem;
+    bottom: 0;
+    background: rgba(246, 246, 246, 0.95);
+    font-size: 0;
+}
+.tabBar ul {
+    display: flex;
+    justify-content: center;
+}
+.tabBar ul li {
+    font-size: 0.78125rem;
+    width: 20%;
+    text-align: center;
+}
+.tabBar ul li div {
+    width: 100%;
+    margin-top: 0.46875rem;
+    height: 1.5625rem;
+    margin-bottom: 0.25rem;
+    background-repeat: no-repeat;
+    background-position: center 0.1875rem;
+}
+.tabBar ul li span {
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #222222;
+}
+.tabBar ul li .indexBtn {
+    background: url(images/tabBarImg1.png) no-repeat;
+    background-position: center 0rem;
+    background-size: 40% 200%;
+}
+.tabBar ul li .sendBtn {
+    background-image: url("images/tabImg6.png");
+    background-position: center -1.5625rem;
+    background-size: 40% 200%;
+}
+.tabBar ul li .reserveBtn {
+    background-image: url("images/tabBarImg4.png");
+    background-position: center -1.5625rem;
+    background-size: 40% 200%;
+}
+.tabBar ul li .shoppingCarBtn {
+    background-image: url("images/tabBarImg3.png");
+    background-position: center -1.5625rem;
+    background-size: 40% 200%;
+}
+.tabBar ul li .myBtn {
+    background-image: url("images/tabBarImg5.png");
+    background-position: center -1.5625rem;
+    background-size: 40% 200%;
+}
+.tabBar ul .shopping_car_tabBar {
+    position: relative;
+}
+.tabBar ul .shopping_car_tabBar .shopping_alertNum {
+    color: #ffffff;
+    position: absolute;
+    top: -0.0625rem;
+    right: -0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #ff4400;
+    line-height: 1.5rem;
+}

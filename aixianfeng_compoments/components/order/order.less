@@ -1,0 +1,215 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+  background-color: #efefef;
+  font-family: "华文细黑";
+  color: #222222;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+//tabBar部分
+.tabBar{
+  position: fixed;
+  width: 100%;
+  height: 120/32rem;
+  bottom:0;
+  background:rgba(246,246,246,.95);
+  font-size: 0;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      font-size: 25/32rem;
+      width: 20%;
+      text-align: center;
+      div{
+        width: 100%;
+        margin-top: 15/32rem;
+        height: 50/32rem;
+        margin-bottom: 8/32rem;
+        //background-size: 45% 90%;
+        background-repeat: no-repeat;
+        background-position: center 6/32rem;
+        //box-sizing: border-box;
+      }
+      span{
+        display: inline-block;
+        width: 4rem;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #222222;
+      }
+
+      //注：当要点击换btn背景的时候直接让他的position-y加减50/32rem就好
+      //50/2也就是div的高度  要做适配必须获取其高度
+      .indexBtn{
+        background: url(images/tabBarImg1.png)no-repeat;
+        background-position: center -0/32rem;
+        background-size: 40% 200%;
+      }
+      .sendBtn{
+        background-image: url("images/tabImg6.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .reserveBtn{
+        background-image: url("images/tabBarImg4.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .shoppingCarBtn{
+        background-image: url("images/tabBarImg3.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+
+      }
+      .myBtn{
+        background-image: url("images/tabBarImg5.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+
+    }
+    .shopping_car_tabBar{
+      position: relative;
+      .shopping_alertNum{
+        color: #ffffff;
+        position: absolute;
+        top: -2/32rem;
+        right: -8/32rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #ff4400;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+//清除tabBar占位
+.clear{
+  width: 100%;
+  height: 110/32rem;
+}
+//-------------------------------------------新鲜约定部分-------------------
+.page3{
+  font-family: "微软雅黑";
+  color:#777777;
+}
+.flesh_top{
+  height: 100/32rem;
+  background-color: #f9fafd;
+  line-height: 100/32rem;
+  width: 100%;
+  text-align: center;
+  font-size: 32/32rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.flesh_menu{
+  display: flex;
+  justify-content: center;
+  height: 75/32rem;
+  background-color: #ffffff;
+  p{
+    width: 25%;
+    height: 100%;
+    line-height: 75/32rem;
+    text-align: center;
+    font-size: 25/32rem;
+    color: #898989;
+    span{
+      width: 80%;
+      height: 75/32rem;
+      display: inline-block;
+    }
+  }
+}
+.flesh_menu1{
+  margin-top: 20/32rem;
+  margin-bottom: 0.1rem;
+}
+//菜单选中出现下border效果
+.flesh_menu_choose{
+  border-bottom: 0.1rem solid #000000!important;
+  color: #222222!important;
+}
+
+//新鲜预定商品列表部分
+.flesh_list{
+  //
+  p{
+    height: 60/32rem;
+    border-top: 1px solid #a0a0a0;
+    margin-top: 20/32rem;
+    margin-bottom: 0.15rem;
+    background-color: #ffffff;
+    line-height: 60/32rem;
+    font-size: 26/32rem;
+    span:before{
+      content: "";
+      display: inline-block;
+      width: 10/32rem;
+      height: 28/32rem;
+      background-color: #2baefe;
+      vertical-align: middle;
+      margin-right: 13/32rem;
+      margin-left: 15/32rem;
+    }
+  }
+  section{
+    width: 100%;
+    height: 216/32rem;
+    margin-bottom: 0.18rem;
+    background-color: #ffffff;
+    //padding: 0 10%;
+    img{
+      height: 216/32rem;
+      width: 216/32rem;
+      float: left;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    p{
+      float: left;
+      border-top: none;
+      width: 280/32rem;
+      padding-right: 50/32rem;
+      line-height: 1.3rem;
+    }
+    span{
+      float: left;
+      margin-top: 60/32rem;
+    }
+    span:nth-of-type(1){
+      font-size: 1.1rem;
+      color: red;
+    }
+    span:nth-of-type(2){
+      width: 50/32rem;
+      height: 30/32rem;
+      margin-top: 70/32rem;
+      margin-left: 2/32rem;
+      text-decoration: line-through;
+      font-size: 20/32rem;
+    }
+    span:nth-of-type(3){
+      width: 75/32rem;
+      height: 75/32rem;
+      border-radius: 50%;
+      background: url("images/page3)_carBg.jpg")no-repeat;
+      background-size: 100%;
+      margin-left: 95/32rem;
+      margin-top: 30/32rem;
+    }
+  }
+
+}

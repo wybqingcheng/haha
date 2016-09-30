@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的订单</title>
+    <link rel="stylesheet/less" href="indent.css">
+    <script type="text/javascript" src="../../lib/screen_fit.js"></script>
+    <script type="text/javascript" src ="../../lib/less.js"></script>
+    <script type="text/javascript" src="../../lib/jquery-1.11.2.js"></script>
+</head>
+<body>
+    <!---------我的订单页面----------------->
+    <div class="myIndent">
+        <header class="indent_header">
+            <div class="indent_back"></div>
+            <div>我的订单</div>
+            <div></div>
+        </header>
+        <nav class="indent_menu">
+            <p class="indent_menu_choose">全部订单</p>
+            <p>待付款</p>
+            <p>待收货</p>
+            <p>待评价</p>
+            <p>退款/售后</p>
+        </nav>
+
+        <!--没有订单的时候-->
+        <section class="no_indent">
+            <span>还没有订单哦</span>
+        </section>
+
+        <!--有订单的状态-->
+        <div class="indent.list">
+            <div class="indent_list">
+                <ul>
+                    <li class="indent_date">
+                        <p>2016-09-27 12:34:44</p>
+                        <p>已取消</p>
+                    </li>
+                    <li class="indent_img">
+                        <img src="images/index_fruit4.jpg" alt="">
+                        <img src="images/index_fruit2.jpg" alt="">
+                        <img src="images/index_fruit3.jpg" alt="">
+                        <img src="images/index_fruit3.jpg" alt="">
+                        <img src="images/index_fruit3.jpg" alt="">
+                        <img src="images/index_fruit3.jpg" alt="">
+                    </li>
+                    <li class="indent_total_price">共<span>3</span><span>件商品&nbsp;￥</span>26.7</li>
+                    <li class="indent_repeat">
+                        <span>再来一单</span>
+                    </li>
+                </ul>
+
+            </div>
+            <!--下面的背景图-->
+            <section class="indent_list_bottom"></section>
+        </div>
+    </div>
+</body>
+</html>

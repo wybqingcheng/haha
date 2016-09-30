@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: #efefef;
+  font-family: "华文细黑";
+  color: #222222;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.tabBar {
+  position: fixed;
+  width: 100%;
+  height: 3.75rem;
+  bottom: 0;
+  background: rgba(246, 246, 246, 0.95);
+  font-size: 0;
+}
+.tabBar ul {
+  display: flex;
+  justify-content: center;
+}
+.tabBar ul li {
+  font-size: 0.78125rem;
+  width: 20%;
+  text-align: center;
+}
+.tabBar ul li div {
+  width: 100%;
+  margin-top: 0.46875rem;
+  height: 1.5625rem;
+  margin-bottom: 0.25rem;
+  background-repeat: no-repeat;
+  background-position: center 0.1875rem;
+}
+.tabBar ul li span {
+  display: inline-block;
+  width: 4rem;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #222222;
+}
+.tabBar ul li .indexBtn {
+  background: url(images/tabBarImg1.png) no-repeat;
+  background-position: center 0rem;
+  background-size: 40% 200%;
+}
+.tabBar ul li .sendBtn {
+  background-image: url("images/tabImg6.png");
+  background-position: center -1.5625rem;
+  background-size: 40% 200%;
+}
+.tabBar ul li .reserveBtn {
+  background-image: url("images/tabBarImg4.png");
+  background-position: center -1.5625rem;
+  background-size: 40% 200%;
+}
+.tabBar ul li .shoppingCarBtn {
+  background-image: url("images/tabBarImg3.png");
+  background-position: center -1.5625rem;
+  background-size: 40% 200%;
+}
+.tabBar ul li .myBtn {
+  background-image: url("images/tabBarImg5.png");
+  background-position: center -1.5625rem;
+  background-size: 40% 200%;
+}
+.tabBar ul .shopping_car_tabBar {
+  position: relative;
+}
+.tabBar ul .shopping_car_tabBar .shopping_alertNum {
+  color: #ffffff;
+  position: absolute;
+  top: -0.0625rem;
+  right: -0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #ff4400;
+  line-height: 1.5rem;
+}
+.clear {
+  width: 100%;
+  height: 3.4375rem;
+}
+.page3 {
+  font-family: "微软雅黑";
+  color: #777777;
+}
+.flesh_top {
+  height: 3.125rem;
+  background-color: #f9fafd;
+  line-height: 3.125rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.flesh_menu {
+  display: flex;
+  justify-content: center;
+  height: 2.34375rem;
+  background-color: #ffffff;
+}
+.flesh_menu p {
+  width: 25%;
+  height: 100%;
+  line-height: 2.34375rem;
+  text-align: center;
+  font-size: 0.78125rem;
+  color: #898989;
+}
+.flesh_menu p span {
+  width: 80%;
+  height: 2.34375rem;
+  display: inline-block;
+}
+.flesh_menu1 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.1rem;
+}
+.flesh_menu_choose {
+  border-bottom: 0.1rem solid #000000!important;
+  color: #222222!important;
+}
+.flesh_list p {
+  height: 1.875rem;
+  border-top: 1px solid #a0a0a0;
+  margin-top: 0.625rem;
+  margin-bottom: 0.15rem;
+  background-color: #ffffff;
+  line-height: 1.875rem;
+  font-size: 0.8125rem;
+}
+.flesh_list p span:before {
+  content: "";
+  display: inline-block;
+  width: 0.3125rem;
+  height: 0.875rem;
+  background-color: #2baefe;
+  vertical-align: middle;
+  margin-right: 0.40625rem;
+  margin-left: 0.46875rem;
+}
+.flesh_list section {
+  width: 100%;
+  height: 6.75rem;
+  margin-bottom: 0.18rem;
+  background-color: #ffffff;
+}
+.flesh_list section img {
+  height: 6.75rem;
+  width: 6.75rem;
+  float: left;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.flesh_list section p {
+  float: left;
+  border-top: none;
+  width: 8.75rem;
+  padding-right: 1.5625rem;
+  line-height: 1.3rem;
+}
+.flesh_list section span {
+  float: left;
+  margin-top: 1.875rem;
+}
+.flesh_list section span:nth-of-type(1) {
+  font-size: 1.1rem;
+  color: red;
+}
+.flesh_list section span:nth-of-type(2) {
+  width: 1.5625rem;
+  height: 0.9375rem;
+  margin-top: 2.1875rem;
+  margin-left: 0.0625rem;
+  text-decoration: line-through;
+  font-size: 0.625rem;
+}
+.flesh_list section span:nth-of-type(3) {
+  width: 2.34375rem;
+  height: 2.34375rem;
+  border-radius: 50%;
+  background: url("images/page3)_carBg.jpg") no-repeat;
+  background-size: 100%;
+  margin-left: 2.96875rem;
+  margin-top: 0.9375rem;
+}

@@ -1,0 +1,360 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+  background-color: #efefef;
+  font-family: "华文细黑";
+  color: #222222;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+//tabBar部分
+.tabBar{
+  position: fixed;
+  width: 100%;
+  height: 120/32rem;
+  bottom:0;
+  background:rgba(246,246,246,.95);
+  font-size: 0;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      font-size: 25/32rem;
+      width: 20%;
+      text-align: center;
+      div{
+        width: 100%;
+        margin-top: 15/32rem;
+        height: 50/32rem;
+        margin-bottom: 8/32rem;
+        //background-size: 45% 90%;
+        background-repeat: no-repeat;
+        background-position: center 6/32rem;
+        //box-sizing: border-box;
+      }
+      span{
+        display: inline-block;
+        width: 4rem;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #222222;
+      }
+
+      //注：当要点击换btn背景的时候直接让他的position-y加减50/32rem就好
+      //50/2也就是div的高度  要做适配必须获取其高度
+      .indexBtn{
+        background: url(images/tabBarImg1.png)no-repeat;
+        background-position: center -0/32rem;
+        background-size: 40% 200%;
+      }
+      .sendBtn{
+        background-image: url("images/tabImg6.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .reserveBtn{
+        background-image: url("images/tabBarImg4.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+      .shoppingCarBtn{
+        background-image: url("images/tabBarImg3.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+
+      }
+      .myBtn{
+        background-image: url("images/tabBarImg5.png");
+        background-position: center -50/32rem;
+        background-size: 40% 200%;
+      }
+
+    }
+    .shopping_car_tabBar{
+      position: relative;
+      .shopping_alertNum{
+        color: #ffffff;
+        position: absolute;
+        top: -2/32rem;
+        right: -8/32rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #ff4400;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+.page4{
+  //空购物车样式
+  .shopping_cart{
+    width: 100%;
+    .shopping_cart_con{
+      width: 100%;
+      height: 900/32rem;
+      background-color: #efefef;
+      padding-top: 20%;
+      .empty_shop{
+        width: 100%;
+        height: 512/32rem;
+        text-align: center;
+        .empty_shop_img{
+          width: 192/32rem;
+          height: 192/32rem;
+          margin: 0 auto;
+          background: url("images/shop_cart.png") no-repeat center;
+          background-size: 100% 100%;
+        }
+        p{
+          width: 100%;
+          height: 80/32rem;
+          line-height: 80/32rem;
+          color:#999;
+          font-size: 1rem;
+        }
+        .go_shop{
+          width: 246/32rem;
+          height: 60/32rem;
+          margin: 0 auto;
+          border: 1px solid #e7e7e7;
+          text-align: center;
+          line-height: 60/32rem;
+          font-size: 1rem;
+          color: #999;
+        }
+      }
+    }
+  }
+  .shopping_cart_tittle{
+    height: 110/32rem;
+    text-align: center;
+    line-height: 110/32rem;
+    font-size: 1rem;
+    color:#5e5e5f;
+    font-weight: bold;
+    background-color: #f9fafd;
+  }
+  //购物车包含购买商品样式
+  .purchase_goods{
+    width: 100%;
+    display: none;
+    .person_info{
+      width: 100%;
+      font-size: 30/32rem;
+      background: url("images/personal_info.png") repeat-x left top,left bottom;
+      th{
+        width: 158/32rem;
+        padding: 0.45rem 0;
+        padding-left: 1.4rem;
+        text-align: justify;
+        font-weight: normal;
+        text-align-last: justify;
+      }
+      tr{
+        td:first-of-type{
+          padding-left: 0.8rem;
+        }
+        td:nth-of-type(2){
+          background: url("images/goods_right.png") no-repeat 2.2rem center ;
+          background-size: auto 1rem;
+        }
+      }
+    }
+    .bg_info{
+      width: 100%;
+      height: 10/32rem;
+      background: url("images/personal_info.png") repeat-x;
+    }
+    .detail_info{
+      width: 100%;
+      .goods_market{
+        width: 100%;
+        height: 72/32rem;
+        line-height: 72/32rem;
+        padding-left: 1.4rem;
+        box-sizing: border-box;
+        position: relative;
+        span:first-of-type{
+          display: inline-block;
+          font-size: 21/32rem;
+          color: #999;
+        }
+        span:first-of-type:before{
+          content: "";
+          display: inline-block;
+          width: 10/32rem;
+          height: 30/32rem;
+          vertical-align: middle;
+          margin-right: 8/32rem;
+          border-radius: 30%;
+          background-color: #ffd600;
+        }
+        span:nth-of-type(2){
+          display: inline-block;
+          width: 172/32rem;
+          height: 62/32rem;
+          border: 1px solid #ff3800;
+          color: #ff3800;
+          font-size: 21/32rem;
+          text-align: center;
+          line-height: 62/32rem;
+          border-radius: 1rem;
+          position: absolute;
+          right: 2.4rem;
+          top:5/32rem;
+        }
+      }
+      p{
+        width: 20rem;
+        height: 48/32rem;
+        text-indent: 1.4rem;
+        font-size: 21/32rem;
+        line-height: 48/32rem;
+        color: #999;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .goods_time{
+        width: 100%;
+        height: 120/32rem;
+        line-height: 120/32rem;
+        font-size: 28/32rem;
+        border-top:1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        color: #333;
+        text-indent: 1.4rem;
+        position: relative;
+        span:first-of-type{
+          display: inline-block;
+          color: #e64f1a;
+        }
+        span:last-of-type{
+          display: inline-block;
+          width: 190/32rem;
+          float: right;
+          background: url("images/goods_right.png") no-repeat 4.5rem center;
+          background-size: auto 1rem;
+        }
+      }
+      .goods_remark{
+        width: 100%;
+        text-indent: 1.4rem;
+        height: 120/32rem;
+        line-height: 120/32rem;
+        font-size: 28/32rem;
+        border-bottom: 1px solid #e0e0e0;
+        input{
+          width: 400/32rem;
+          height: 80/32rem;
+          margin-left: 1.5rem;
+          border: 1px solid #cecece;
+          border-radius: 10/32rem;
+          text-indent: 10/32rem;
+        }
+      }
+      .choose_goods_info{
+        width: 100%;
+        tr{
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid #e0e0e0;
+          td:first-of-type{
+            width: 120/32rem;
+            height: 192/32rem;
+            background: url("images/goods_choose.png") no-repeat center;
+            background-size: 1.8rem 1.8rem;
+          }
+          td:nth-of-type(2){
+            width: 120/32rem;
+            height: 192/32rem;
+            background: url("images/grape.jpg") no-repeat center;
+            background-size: 120/32rem 120/32rem;
+          }
+          td:nth-of-type(3){
+            width: 355/32rem;
+            height: 192/32rem;
+            padding-left: 45/32rem;
+            .goods_name{
+              height: 96/32rem;
+              line-height: 96/32rem;
+              font-size: 1rem;
+              color: #383838;
+            }
+            .goods_num{
+              height: 96/32rem;
+              line-height: 96/32rem;
+              span:first-of-type{
+                display: inline-block;
+                font-size: 21/32rem;
+                color: #383838;
+              }
+              span:nth-of-type(3){
+                display: inline-block;
+                width: 66/32rem;
+                height: 66/32rem;
+                text-align: center;
+                line-height: 66/32rem;
+              }
+              span:nth-of-type(2),span:nth-of-type(4){
+                display: inline-block;
+                width: 66/32rem;
+                height: 66/32rem;
+                text-align: center;
+                line-height: 66/32rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+                border: 1px solid #ffbe89;
+                border-radius: 50%;
+                color: #ff4300;
+              }
+              span:nth-of-type(2){
+                margin-left: 58/32rem;
+              }
+            }
+
+          }
+        }
+      }
+      .total_price{
+        width: 100%;
+        height: 120/32rem;
+        line-height: 120/32rem;
+        text-indent:  1.2rem;
+        font-size: 26/32rem;
+        span:first-of-type{
+          display: inline-block;
+          width: 180/32rem;
+          height: 100%;
+          text-align: center;
+          background: url("images/goods_choose.png") no-repeat left center;
+          background-size: 1.8rem 1.8rem;
+        }
+        span:nth-of-type(3){
+          color: #e64f1a;
+        }
+        span:last-of-type{
+          color: #333;
+          display: inline-block;
+          width: 220/32rem;
+          height: 100%;
+          text-align: center;
+          background-color: #ffd600;
+          float: right;
+          font-size: 30/32rem;
+        }
+      }
+    }
+  }
+}
+.hidden{
+  display: none;
+}

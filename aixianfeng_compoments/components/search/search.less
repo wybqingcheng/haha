@@ -1,0 +1,220 @@
+html,body,div,p,span,a,header,footer,h1,h2,h3,h4,h5,h6,img,input,ul,li,table,tbody,th,td,tr{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style: none;
+}
+body{
+  background-color: #efefef;
+}
+//搜索界面样式
+#mod_search{
+  width: 100%;
+  height: 100%;
+  .mod_search_bar{
+    width: 100%;
+    height: 90/32rem;
+    background-color: #f9fafd;
+    border-bottom: 1/32rem solid #efefef;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .search_back{
+      width: 90/32rem;
+      height: 90/32rem;
+      background: url("images/goods_left.png") no-repeat center;
+      background-size: 1.6rem 1.6rem;
+    }
+    .search_box{
+      width: 398/32rem;
+      height: 1.8rem;
+      input{
+        width: 100%;
+        height: 100%;
+        border: 1/32rem solid #efefef;
+        border-radius: 10/32rem;
+        background: url("images/search_03.png") no-repeat 0.2rem center;
+        background-size: 1rem 1rem;
+        text-indent:1.2rem;
+      }
+    }
+    .search_text{
+      width: 97/32rem;
+      height: 2rem;
+      text-align: center;
+      line-height: 2rem;
+      color: #777;
+      font-size: 26/32rem;
+    }
+  }
+  .mod_search_tip{
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    .mod_hot_search{
+      width: 560/32rem;
+      margin: 0 auto;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        .hot_item{
+          height: 68/32rem;
+          line-height: 68/32rem;
+          padding-left: 22/32rem;
+          padding-right: 22/32rem;
+          text-align: center;
+          border: 1/32rem solid #e4e4e4;
+          background-color: #fff;
+          border-radius: 20/32rem;
+          margin-top: 20/32rem;
+          margin-right: 23/32rem;
+          font-size: 23/32rem;
+          color: #3b3b3b;
+        }
+      }
+    }
+    .search_history{
+      width: 560/32rem;
+      margin: 3rem auto;
+      span{
+        display: inline-block;
+        height: 68/32rem;
+        line-height: 68/32rem;
+        padding-left: 22/32rem;
+        padding-right: 22/32rem;
+        text-align: center;
+        border: 1/32rem solid #e4e4e4;
+        background-color: #fff;
+        border-radius: 20/32rem;
+        margin-right: 10/32rem;
+        font-size: 23/32rem;
+        color: #3b3b3b;
+      }
+    }
+    .clear_btn{
+      width: 425/32rem;
+      height: 80/32rem;
+      text-align: center;
+      line-height: 80/32rem;
+      color: #b3b3b3;
+      border: 1/32rem solid #e0e0e0;
+      border-radius: 10/32rem;
+      margin: 0 auto;
+    }
+  }
+  .search_tittle{
+    width: 580/32rem;
+    height: 50/32rem;
+    color: #8f8f8f;
+    font-size: 23/32rem;
+  }
+  .mod_search_result{
+    width: 100%;
+    height: 100%;
+    display: none;
+    .search_result_item{
+      width: 291/32rem;
+      height: 452/32rem;
+      background-color: #fff;
+      margin-top: 17/32rem;
+      margin-left: 19/32rem;
+      float: left;
+      .search_result_img1{
+        width: 100%;
+        height: 275/32rem;
+        background: url("images/result_03.png") no-repeat;
+        background-size: 100%;
+      }
+      .search_result_img2{
+        width: 100%;
+        height: 275/32rem;
+        background: url("images/result_05.png") no-repeat;
+        background-size: 100%;
+      }
+      .search_result_img3{
+        width: 100%;
+        height: 275/32rem;
+        background: url("images/result_09.png") no-repeat;
+        background-size: 100%;
+      }
+      .search_result_name{
+        width: 100%;
+        height: 42/32rem;
+        line-height: 42/32rem;
+        text-indent: 20/32rem;
+        color: #232b33;
+        font-size: 23/32rem;
+      }
+      .search_result_sift{
+        width: 100%;
+        height: 42/32rem;
+        text-indent: 20/32rem;
+        span{
+          color: #ff0000;
+          font-size: 20/32rem;
+          display: inline-block;
+          text-align: center;
+          text-indent: 0;
+          padding: 0 5/32rem;
+          border: 1/32rem solid #ff0000;
+          border-radius: 5/32rem;
+        }
+      }
+      .search_result_weight{
+        width: 100%;
+        height: 42/32rem;
+        line-height: 42/32rem;
+        color: #999;
+        font-size: 23/32rem;
+        text-indent: 20/32rem;
+      }
+      .search_result_price{
+        font-size: 23/32rem;
+        color: #ff4400;
+        text-indent: 20/32rem;
+        width: 100%;
+        height: 42/32rem;
+        line-height: 42/32rem;
+        span:nth-of-type(2){
+          color: #999;
+          text-decoration: line-through;
+          margin-left: 5/32rem;
+        }
+        span:last-of-type{
+          margin-left: 58/32rem;
+        }
+      }
+    }
+  }
+  .mod_shopCart{
+    display: none;
+    width: 120/32rem;
+    height: 120/32rem;
+    border-radius: 50%;
+    background-color: #ffd600;
+    position: fixed;
+    right: 12/32rem;
+    bottom: 14/32rem;
+    border: 4/32rem solid #fff;
+    .bg_cart{
+      width: 120/32rem;
+      height: 120/32rem;
+      border-radius: 50%;
+      background: url("images/goods_cart.png") no-repeat center;
+      background-size: 80%;
+    }
+    .shopGoods_num{
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.5rem;
+      background-color: #ff4400;
+      color: #fff;
+      position: absolute;
+      top:-0.1rem;
+      right: -0.2rem;
+    }
+  }
+}
